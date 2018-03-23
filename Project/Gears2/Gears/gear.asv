@@ -62,27 +62,15 @@ function [BS,BS_FOS,CS,CS_FOS] = gear(d,N,H,F,RPM,Yn_lookup,tR,ht,power,machine,
 %inout: THiS ONE IS ODD, internal or external gears
 %  angle: transverse pressure angle (radians)
 %inout: THiS ONE IS ODD, internal or external gears
->>>>>>> 08df0fe7d58e73334aaa4436f61484972a6979f2
 %  - -1: internal gears
 %  - 1: external gears 
 %LF - Lewis Factor
-<<<<<<< HEAD
-<<<<<<< HEAD
-b=F;
-V = (pi*d*RPM)/60;%V:velocity in m/s
-m = d/N;%m: modulus
-Wt = (H/V);%Wt: transmitted load in N
-=======
-=======
->>>>>>> 08df0fe7d58e73334aaa4436f61484972a6979f2
+
 b = F; %(mm)
-V = (pi*d*RPM)/60; %V: velocity in mm/s found from RPM. 
+V = (pi*d*RPM)*(10^-3)/60; %V: velocity in m/s found from RPM. 
 m = d/N; %m: modulus
 Wt = (H/V); %Wt: transmitted load in kN
-<<<<<<< HEAD
->>>>>>> 08df0fe7d58e73334aaa4436f61484972a6979f2
-=======
->>>>>>> 08df0fe7d58e73334aaa4436f61484972a6979f2
+
 %------------------------------------------------------------------------------
 Yn = Ynfunc(Yn_lookup); 
 Ks = ksfunc(F,Yn,m);
@@ -104,15 +92,7 @@ I = Ifunc(angle,mg,inout);
 Sc = Scfunc(Hb, Grade);
 Zn = Znfunc(Nitrided,N_cyc);
 Zw = Zwfunc(pinion,Hp,Hg,mg);
-<<<<<<< HEAD
-<<<<<<< HEAD
-CS = Cp*((Wt*K0*Kv*Ks*Km*Cf/(d*F*I))^(1/2));
-=======
 CS = Cp*(Wt*Ko*Kv*Ks*Km*Cf/(d*F*I))^(1/2);
->>>>>>> 08df0fe7d58e73334aaa4436f61484972a6979f2
-=======
-CS = Cp*(Wt*Ko*Kv*Ks*Km*Cf/(d*F*I))^(1/2);
->>>>>>> 08df0fe7d58e73334aaa4436f61484972a6979f2
 CS_FOS = (Sc*Zn*Zw)/(CS*Kt*Yz);
 end
 

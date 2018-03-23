@@ -1,7 +1,7 @@
 function [Kv] = Kvfunc(V,KvFactor)
 %see page 731
 %V: pitch-line velocity in m/s
-
+%V=V*(10^-3);
 if KvFactor == 1
     A = 3.05;
     Kv = ((A+V)/A);
