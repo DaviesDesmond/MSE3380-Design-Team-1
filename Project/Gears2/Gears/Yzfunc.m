@@ -9,6 +9,8 @@ elseif reli == 0.90
     Yz = 0.85;
 elseif reli == 0.50
     Yz = 0.7;
+elseif reli ==0.95
+    Yz = 0.885; %this case is written for GearTest
 else
     error('Yz function can not interpolate or extrapolate, please enter 0.9999, 0.999, 0.99, 0.90 or 0.50')
 end
