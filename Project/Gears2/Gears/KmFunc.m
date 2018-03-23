@@ -43,15 +43,7 @@ elseif b_cpf <= 25
 elseif b_cpf <=425
     Cpf = num-0.0375+4.92*(10^-4)*b_cpf;
 elseif b_cpf <= 1000
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Cpf = num-0.1109+(8.15*(10^-4)*b_cpf)-(3.53*(10^-7)*b_cpf^2)
-=======
-    Cpf = num-0.1109+(8.15*(10^-4)*b_cpf)-(3.53*(10^-7)*(b_cpf^2));
->>>>>>> 08df0fe7d58e73334aaa4436f61484972a6979f2
-=======
-    Cpf = num-0.1109+(8.15*(10^-4)*b_cpf)-(3.53*(10^-7)*(b_cpf^2));
->>>>>>> 08df0fe7d58e73334aaa4436f61484972a6979f2
+    Cpf = num-0.1109+(8.15*(10^-4)*b_cpf)-(3.53*(10^-7)*b_cpf^2);
 else
    error('b greater than 1000mm is out of scope') 
 end
