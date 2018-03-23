@@ -1,4 +1,4 @@
-function [Ks] = ksfunc(F,Y,m)
+[Ks] = ksfunc(F,Y,m)
 % Ks - size factor - non-uniformity of material properties due to size. SUGGESTED TO BE EQUAL TO ONE. If Ks is less than one, assume it is one.
 % F - face width (mm)
 % Y - stress-cycle factor for bending strength, lewis factor
