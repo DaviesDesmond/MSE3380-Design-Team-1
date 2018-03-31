@@ -1,7 +1,6 @@
-function [outputArg1,outputArg2] = kd_func(inputArg1,inputArg2)
-%UNTITLED8 Summary of this function goes here
-%   Detailed explanation goes here
-outputArg1 = inputArg1;
-outputArg2 = inputArg2;
+function [kd] = kd_func(temp)
+%temp - temperature in C
+tf = (temp*1.8)+32;
+kd = 0.975 + 0.432*(10^-3)*tf-0.115*(10^-5)*(tf^2) + 0.104 * (10^-8)*(tf^3) - 0.595*(10^-12)*(tf^4);
 end
 

@@ -1,4 +1,4 @@
-function [Se_prime] = Se_func(Sut)
+function [Se_prime] = Se_prime_func(Sut)
 %Sut - Sut in MPa
 if Sut <=1400
     Se_prime = Sut/2;
