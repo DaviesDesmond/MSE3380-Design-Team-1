@@ -1,0 +1,10 @@
+function [outputArg1,outputArg2] = shafts(Sut,finish)
+%Sut - Sut in MPa
+% finish:
+%  1 - Ground
+%  2 - Machined or cold-drawn
+%  3 - Hot-rolled
+%  4 - As-forged
+s
+end
+
