@@ -15,8 +15,9 @@ Options10 = OptionMakerSquare(P20Square,P20Square,LengthVar);
 Options11 = OptionMakerSquare(P32Square,P20Square,LengthVar);
 Options12 = OptionMakerSquare(P20Square,P24Square,LengthVar);
 
-LowLim = 0.02956;
-HighLim = 0.029565;
+LowLim = 0.033075;%lowest ration looked for
+HighLim = 0.03309;%highest ration looked for
+
 
 GoodOP7 = Options7>LowLim & Options7 <=HighLim;
 GoodOP8 = Options8>LowLim & Options8 <=HighLim;
@@ -33,17 +34,17 @@ OP11 = find(GoodOP11==1);
 OP12 = find(GoodOP12 ==1);
 
 
-Location = -1
-for u = 33
-    for v = 1:42
-        v
-        u
-        display (Options10(:,:,v,u))
-    end
-end    
-
-Value = Options10(:,:,3,33);
-%Value = Options10(:,:,37:42,31:35);
-
-
-
+% Location = -1
+% for u = 33
+%     for v = 1:42
+%         v
+%         u
+%         display (Options10(:,:,v,u))
+%     end
+% end    
+% 
+% Value = Options10(:,:,3,33);
+% %Value = Options10(:,:,37:42,31:35);
+% 
+% 
+% 
