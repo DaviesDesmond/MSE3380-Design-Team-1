@@ -5,11 +5,11 @@ function [Fe] = FeFunc (Vchoice, Fr, Fa, Co)
 %Xi - Ordinate intercept.
 %Yi - Slope of the line.
 %V - Shows whether the inner ring or outer ring is rotating.
-e = eFunc(Fa, Co);
 FaOverCo = FaOverCoFunc(Fa, Co);
+e = eFunc(FaOverCo);
 
 V = VchoiceFunc(Vchoice);
-i = iFunc(Fa, V, Fr,e);
+i = iFunc(Fa, V, Fr, e);
 X = XFunc(i);
 Y = YFunc(i, FaOverCo);
 %Equation to solve for Fe.

@@ -1,6 +1,4 @@
-function [e] = eFunc(Fa, Co)
-
-FaOverCo = FaOverCoFunc(Fa,Co);
+function [e] = eFunc (FaOverCo)
 
 %Create the corresponding e value from Table 11-1.
 

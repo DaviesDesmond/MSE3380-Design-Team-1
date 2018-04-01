@@ -11,7 +11,7 @@ Af = AfFunc();
 Fe = FeFunc(Vchoice, Fr, Fa, Co); 
 Ld = LdFunc(DesiredLife, DesiredSpeed); 
 Lr = BearingLifeFunc(RatingLife, RatedSpeed); 
-a = afunc(bearing); 
+a = aFunc(bearing); 
 
 CTen = Af*Fe*((Ld/Lr)^(1/a));
 

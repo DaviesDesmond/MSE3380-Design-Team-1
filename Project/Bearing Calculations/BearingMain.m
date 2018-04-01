@@ -21,7 +21,7 @@ DesiredSpeedRevPerMin = 575;
 DesiredSpeed = DesiredSpeedRevPerMin*60;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Co value from chosen bearing.
-Co = 6.2;
+Co = 620;
 %Rated life from chosen bearing, in hours.
 RatedLife = 20000;
 %Rated speed from chosen bearing, in revolutions per minute.
