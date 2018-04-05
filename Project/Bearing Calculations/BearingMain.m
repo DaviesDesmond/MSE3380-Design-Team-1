@@ -1,3 +1,5 @@
+clear
+clc
 %In this code, the variables will be named and the functions will be
 %called.
 %In order to use this function, you must first determine the correct bore
@@ -10,20 +12,20 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Radial Loading, in kN.
-Fr = 100;
+Fr = 0.07099;
 %Axial loading, in kN.
-Fa = 100;
+Fa = 0;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Desired life from chosen design, in hours.
-DesiredLife = 30000;
+DesiredLife = 8*5*50*2;
 %Desired speed from chosen design, in rev/min.
-DesiredSpeedRevPerMin = 575;
+DesiredSpeedRevPerMin = 3258;
 DesiredSpeed = DesiredSpeedRevPerMin*60;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Co value from chosen bearing.
-Co = 620;
+Co = 11;
 %Rated life from chosen bearing, in hours.
-RatedLife = 20000;
+RatedLife = 100/3;
 %Rated speed from chosen bearing, in revolutions per minute.
 RatedSpeedRevPerMin = 500;
 RatedSpeed = RatedSpeedRevPerMin*60;
@@ -35,7 +37,7 @@ Vchoice = 0;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %bearing = 0 - ball bearings
 %bearing = 1 - roller bearings
-bearing = 0;
+bearing = 1;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Af has been assumed to be 1.5 since it undergoes light to moderate impact.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

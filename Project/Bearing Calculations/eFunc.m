@@ -1,7 +1,8 @@
 function [e] = eFunc (FaOverCo)
 
 %Create the corresponding e value from Table 11-1.
-
+if FaOverCo == 0
+    e = 0;
 if FaOverCo == 0.014
     e = 0.19;
 end
