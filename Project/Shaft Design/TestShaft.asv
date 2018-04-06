@@ -1,11 +1,11 @@
 function [FOS,FOS_torsion,FOS_yield] = shafts(Sut,finish,d,loading,temp,reliability,Kt_bend,q_bend,Kt_axial,q_axial,Kts,qs,sigma_bending_max,sigma_bending_min,sigma_axial_max,sigma_axial_min,torque_max,torque_min,Sy)
 %UNTITLED9 Summary of this function goes here
-%Detailed explanation goes here
-Se = se_func(Sut,finish,d,loading,temp,reliability);
+%   Detailed explanation goes here
+Se = se_func(Sut,finish,d,loading,temp,reliability)
 
-Kf_bend = Kf_func(Kt_bend,q_bend);
+Kf_bend = Kf_func(Kt_bend,q_bend)
 
-Kf_axial = Kf_func(Kt_axial,q_axial);
+Kf_axial = Kf_func(Kt_axial,q_axial)
 
 Kfs = Kfs_func(Kts,qs);
 
